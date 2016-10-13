@@ -1,8 +1,11 @@
 class Stat
   include Mongoid::Document
+  include Mongoid::Timestamps
 
-  field :temperature, type: Float
-  field :humidity, type: Float
-  field :preasure, type: Float
+  embedded_in :post, inverse_of: :comments
+
+  field :name, type: String
+  field :value, type: Float
+  filed :unit, type: String
   field :time, type: DateTime
 end

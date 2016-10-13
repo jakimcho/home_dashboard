@@ -1,0 +1,7 @@
+ <h2>Home Page</h2>
+
+ <p>This would be a static home page in a Rails application.</p>
+<h2><%= @areas[0].name %></h2>
+ <% @areas.each do |area| %>
+ <h3><%= area.name %><h3>
+ <%end%>
