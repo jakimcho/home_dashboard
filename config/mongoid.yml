@@ -144,7 +144,7 @@ test:
 # Production to mongoLab
 prduction:
   clients:
-    default: home_dashboard
+    default:
       # The standard MongoDB connection URI allows for easy
       # replica set connection setup.
       # Use environment variables or a config file to keep your
