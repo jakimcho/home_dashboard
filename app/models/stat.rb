@@ -7,5 +7,5 @@ class Stat
   field :name, type: String
   field :value, type: Float
   field :unit, type: String
-  field :time, type: DateTime
+  field :time, type: String
 end
