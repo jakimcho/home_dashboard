@@ -149,7 +149,7 @@ prduction:
       # replica set connection setup.
       # Use environment variables or a config file to keep your
       # credentials safe e.g. <%= ENV['MONGODB_URI'] %>.
-      uri: <%= ENV['PROD_MONGODB'] %>
+      uri: ENV['PROD_MONGODB']
 
       options:
        # The default timeout is 5, which is the time in seconds
