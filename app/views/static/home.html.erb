@@ -22,7 +22,7 @@
 					<td><%= stat.unit %></td>
 					<td>
 						<% stat.time[8] = ' ' %>
-						<%= ("20" + stat.time).in_time_zone %>
+						<%= ("20" + stat.time + " UTC").in_time_zone('Sofia') %>
 					</td>
 				</tr>
 				<% end %>
@@ -49,7 +49,7 @@
 					<td><%= stat.value %></td>
 					<td><%= stat.unit %></td>
 					<td><% stat.time[8] = ' ' %>
-						<%= ("20" + stat.time).in_time_zone %>
+						<%= ("20" + stat.time + " UTC").in_time_zone('Sofia') %>
 					</td>
 				</tr>
 				<% end %>
