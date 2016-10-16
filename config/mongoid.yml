@@ -147,7 +147,7 @@ prduction:
   clients:
     default:
       database: home_dashboard
-      uri: <%= ENV['PROD_MONGODB'] %>
+      uri: mongodb://jakim:HellFire@ds031611.mlab.com:31611/home_dashboard
       options:
         skip_version_check: true
         safe: true
