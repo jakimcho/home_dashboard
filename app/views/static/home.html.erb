@@ -1,14 +1,54 @@
- <h2>Home Page</h2>
+<h2 class="center">Welcome to God land stats</h2>
 
- <p>This would be a static home page in a Rails application.</p>
-<h2><%= @areas[0].name %></h2>
-<% @areas.each do |area| %>
- 	<h3><%= area.name %><h3>
- 	<% area.stats.each do |stat| %>
- 		<h2>name: <%= stat.name %></h2>
- 		<h2>value: <%= stat.value %></h2>
- 		<h2>unit: <%= stat.unit %></h2>
- 		<h2>time: <%= stat.time %></h2>
- 	<% end %>
-<% end %>
-
+<div class="main-content">
+	<div class="content left">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="3">
+						Stats for <%= @areas[0].name %>
+					</th>
+				</tr>
+				<tr>
+					<th>Temperature</th>
+					<th>Unit</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @areas[0].stats.each do |stat| %>
+				<tr>
+					<td><%= stat.value %></td>
+					<td><%= stat.unit %></td>
+					<td><%= stat.time %></td>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+	<div class="content right">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="3">
+						Stats for <%= @areas[1].name %>
+					</th>
+				</tr>
+				<tr>
+					<th>Temperature</th>
+					<th>Unit</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @areas[1].stats.each do |stat| %>
+				<tr>
+					<td><%= stat.value %></td>
+					<td><%= stat.unit %></td>
+					<td><%= stat.time %></td>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

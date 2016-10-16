@@ -1,3 +1,38 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.main-content{
+
+	margin: 0 auto 0 auto;
+	padding: 10px 20px 10px 20px;
+	background-color: #F5FFFA;
+	width: 50%;
+	overflow:auto
+}
+
+div.content{
+	display: inline;
+	margin: 20px;
+}
+
+
+table, th, td{
+	border-style: solid;
+	border-width: 1px;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+ th, td{
+ 	text-align: center;
+ 	padding: 6px;
+ }
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
