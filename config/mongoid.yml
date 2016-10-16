@@ -143,7 +143,7 @@ test:
         max_pool_size: 1
 # Production to mongoLab
 prduction:
-  clients:
+  sessions:
     default:
       # The standard MongoDB connection URI allows for easy
       # replica set connection setup.
