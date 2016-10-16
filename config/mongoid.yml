@@ -143,10 +143,18 @@ test:
         max_pool_size: 1
 # Production to mongoLab
 
-prduction:
+production:
   clients:
     default:
-      uri: 'mongodb://jakim:HellFire@ds031611.mlab.com:31611/home_dashboard'
+      database: home_dashboard
+      hosts:
+        - ds031611.mlab.com:31611
       options:
-        skip_version_check: true
-        safe: true
+        user: "jakim"
+        password: "HellFire"
+        read:
+          mode: :primary
+        max_pool_size: 1
+# Production to mongoLab
+
+
