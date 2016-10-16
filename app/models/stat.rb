@@ -6,6 +6,6 @@ class Stat
 
   field :name, type: String
   field :value, type: Float
-  filed :unit, type: String
+  field :unit, type: String
   field :time, type: DateTime
 end
