@@ -20,7 +20,7 @@
 				<tr>
 					<td><%= stat.value %></td>
 					<td><%= stat.unit %></td>
-					<td><%= Time.zone.parse stat.time.gsub(/[-:]/, ",")%></td>
+					<td><%= Time.zone.utc(stat.time.gsub(/[-:]/, ",")).in_time_zone%></td>
 				</tr>
 				<% end %>
 			</tbody>
