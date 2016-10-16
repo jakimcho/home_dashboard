@@ -2,6 +2,13 @@
 
  <p>This would be a static home page in a Rails application.</p>
 <h2><%= @areas[0].name %></h2>
- <% @areas.each do |area| %>
- <h3><%= area.name %><h3>
- <%end%>
+<% @areas.each do |area| %>
+ 	<h3><%= area.name %><h3>
+ 	<% area.stats.each do |stat| %>
+ 		<h2>name: <%= stat.name %></h2>
+ 		<h2>value: <%= stat.value %></h2>
+ 		<h2>unit: <%= stat.unit %></h2>
+ 		<h2>time: <%= stat.time %></h2>
+ 	<% end %>
+<% end %>
+
