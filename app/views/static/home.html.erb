@@ -21,8 +21,9 @@
 					<td><%= stat.value %></td>
 					<td><%= stat.unit %></td>
 					<td>
-					<% stat.time[8]= ' ';
-					 puts(("20" + stat.time).in_time_zone); %></td>
+						<% stat.time[8] = ' ' %>;
+						<%= ("20" + stat.time).in_time_zone %>
+					</td>
 				</tr>
 				<% end %>
 			</tbody>
@@ -47,7 +48,9 @@
 				<tr>
 					<td><%= stat.value %></td>
 					<td><%= stat.unit %></td>
-					<td><%= stat.time %></td>
+						<% stat.time[8] = ' ' %>;
+						<%= ("20" + stat.time).in_time_zone %>
+					</td>
 				</tr>
 				<% end %>
 			</tbody>
