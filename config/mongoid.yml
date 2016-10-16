@@ -144,12 +144,12 @@ test:
 # Production to mongoLab
 prduction:
   clients:
-    default:
+    default: home_dashboard
       # The standard MongoDB connection URI allows for easy
       # replica set connection setup.
       # Use environment variables or a config file to keep your
       # credentials safe e.g. <%= ENV['MONGODB_URI'] %>.
-      uri: mongodb://jakim:HellFire@ds031611.mlab.com:31611/home_dashboard
+      uri: <%= ENV['PROD_MONGODB'] %>
 
       options:
        # The default timeout is 5, which is the time in seconds
