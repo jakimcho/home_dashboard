@@ -38,12 +38,12 @@
             }
         },
         series: [{
-            name: 'Room1',
+            name: 'Outside',
             type: 'line',
             data: [<%= @room1_temperature.map(&:inspect).join(', ') %>]
 
         }, {
-            name: 'Room2',
+            name: 'Hall',
             type: 'line',
             data: [<%= @room2_temperature.map(&:inspect).join(', ') %>]
 
